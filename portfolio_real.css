@@ -299,6 +299,43 @@ input[type=submit] {
     cursor: pointer;
     line-height: 1;
 }
+/* 店舗情報・地図 */
+#location {
+    padding: 4% 0;
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.location-info {
+    width: 22%;
+}
+.location-info p {
+    padding: 12px 10px;
+}
+.location-map {
+    width: 74%;
+}
+/* 店舗情報・地図 */
+iframe {
+    width: 100%;
+}
+/* SNS */
+#sns {
+    background: #FAF7F0;
+    padding: 4% 0;
+}
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+#sns .sub-title {
+    margin-bottom: 30px;
+}
+.sns-box {
+    width: 30%;
+}
+
 
 
 /* mobile
@@ -371,5 +408,29 @@ input[type=submit] {
     }
     .big-box img{
         height: auto;
+    }
+    /*Contact*/
+    #contact .page-title {
+        margin-top: 40px;
+    }
+    
+    /*From*/
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%
+    }
+    /* 店舗情報・地図 / SNS */
+    #location .wrapper,
+    #sns .wrapper {
+            flex-direction: column;
+    }
+    .location-info,
+    .location-map,
+    .sns-box {
+    width: 100%;
+    }
+    .sns-box {
+    margin-bottom: 30px;
     }
 }
